@@ -1,0 +1,210 @@
+body{
+    background-image: url(../img/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecalho{
+    font-family: 'Fruktur', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.pokemon-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 26px;
+    margin: 60px 0;
+}
+
+.lista-pokemons{
+    width: 320px;
+    height: 510px;
+    position: relative;
+}
+
+.btn-seta{
+    background-color: #ffffff3a;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+.btn-seta:hover{
+    background-color: #c0ced4;
+}
+
+.btn-seta.btn-avancar{
+    transform: rotateY(180deg);
+}
+
+.cartao{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 254, 254, 0.35) 0px 5px 15px;
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.cartao:hover{
+    box-shadow: rgba(0, 89, 255, 0.35) 0px 25px 35px;
+}
+
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo-1 {
+    background: url(../img/fundo-vini.jpg) no-repeat;
+}
+
+.fundo-2 {
+    background: url(../img/fundo-davi.jpg) no-repeat; 
+}
+
+.fundo-3 {
+    background: url(../img/fundo-gabi.jpg) no-repeat;
+}
+
+.fundo-4 {
+    background: url(../img/fundo-gustavo.jpg) no-repeat;
+}
+
+.cartao .informacoes .nome-1 {
+    background-color: #000000a4;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cartao .informacoes .nome-2 {
+    background-color: #000000a4;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cartao .informacoes .nome-3 {
+    background-color: #000000a4;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cartao .informacoes .nome-4 {
+    background-color: #000000a4;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container-img {
+    text-align: center;
+}
+
+.cartao .img-vingador-1{
+    max-width: 100%;
+    max-height: 284px;
+}
+
+.cartao .img-vingador-2{
+    max-width: 100%;
+    max-height: 284px;
+}
+
+.cartao .img-vingador-3{
+    max-width: 100%;
+    max-height: 284px;
+}
+
+.cartao .img-vingador-4{
+    max-width: 100%;
+    max-height: 284px;
+}
+
+.pokemon-slider .lista-pokemons .descricao {
+    background-color: #000000a4;
+    /* padding: 6px; */
+    border-radius: 10px;
+    max-height: 400px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+
+.cartao .descricao .titulo{
+    font-family: 'Bebas Neue', monospace;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.cartao .descricao .texto {
+    font-size: 14px;
+    padding: 8px;
+    min-height: 50px;
+    color: #ffffff;
+}
+
+@supports (scrollbar-color: auto) {
+    .scrollbox {
+        /* scrollbar-color: #333 rgba(225, 225, 225, 0.8); */
+
+        /* outline: 2px dashed rgba(225, 225, 225, 0.8); */
+
+        scrollbar-width: none;
+    }
+}
+
+.img-seta {
+    height: 40px;
+    width: 40px;
+}
+
+.hab {
+    padding-left: 5%;
+    color: #ffffff;
+}
+
+.button-container {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+
+}
+
+button {
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff80;
+    cursor: pointer;
+
+}
+
+button img {
+    width: 30px;
+    height: auto;
+
+}
